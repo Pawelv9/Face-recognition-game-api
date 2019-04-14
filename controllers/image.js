@@ -1,8 +1,9 @@
 const Clarifai = require ('clarifai')
-const key = require('../key')
+// const key = require('../key')
 
 const app = new Clarifai.App({
-    apiKey: key.API_KEY
+    // apiKey: key.API_KEY
+    apiKey: API_KEY
 });
 
 const handleApiCall = (req, res) => { 
