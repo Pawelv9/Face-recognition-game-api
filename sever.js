@@ -11,10 +11,11 @@ const image = require('./controllers/image')
 const db = knex({
     client: 'pg',
     connection: {
-        host: 'postgresql-tetrahedral-36288',
-        user: 'postgres',
-        password: process.env.PASSWORD,
-        database: 'face'
+        connectionString: process.env.DATABASE_URL,
+        ssl: true
+        // user: 'postgres',
+        // password: process.env.PASSWORD,
+        // database: 'face'
     }
 });
 
